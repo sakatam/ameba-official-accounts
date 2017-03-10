@@ -1,0 +1,20 @@
+{
+  "name": "ameba-official-accounts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "author": "sakatam",
+  "license": "MIT",
+  "repository": {},
+  "dependencies": {
+    "async": "^2.1.5",
+    "cheerio": "^0.22.0",
+    "express": "^4.15.2",
+    "redis": "^2.6.5",
+    "request": "^2.80.0"
+  }
+}
