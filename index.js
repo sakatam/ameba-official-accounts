@@ -23,11 +23,13 @@ var scrape_with_cache = function(cb) {
 }
 
 app.get('/', function(req, res, next) {
-  scrape_with_cache(function(err, ids) {
-    if(err)
+  scrape_with_cache(function(err, data) {
+    if(err) {
+      console.error(err)
       return res.status(500).send('error caught')
+    }
 
-    res.send({ids: ids, num_ids: ids.length})
+    res.send({data, length: data.length})
   })
 })
 
